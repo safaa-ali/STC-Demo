@@ -4,6 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+import org.springframework.boot.SpringApplication;
+
+import com.example.stc.demo.StcApplication;
+
 public class ReverseSubstrings {
 	public static String reverseParentheses(String s) {
 		// 1 <= s.length <= 2000
@@ -40,6 +44,13 @@ public class ReverseSubstrings {
 
 		}
 		return s;
+	}
+
+	public static void main(String[] args) {
+
+		String str = "dkS(zx)a(ghhh)";
+
+		System.out.println(reverseParentheses(str));
 	}
 
 }
